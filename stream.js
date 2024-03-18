@@ -1,4 +1,4 @@
-const ffmpegPath = require("@ffmpeg-installer/ffmpeg").path;
+const ffmpegPath = '/ffmpeg/ffmpeg'; // Specify the custom file path for FFmpeg
 const ffmpeg = require("fluent-ffmpeg");
 const axios = require("axios");
 
@@ -47,7 +47,7 @@ module.exports.Start = async () => {
           fontfile: "./assets/vertopal.com_Chopsic.ttf",
           text: "NOW PLAYING",
           fontsize: 26,
-		  fontcolor: "white",
+          fontcolor: "white",
           x: "(w-tw)/2",
           y: "(main_h-160)",
           shadowcolor: "black",
